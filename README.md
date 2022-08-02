@@ -1,2 +1,2 @@
-# goit-markup-hw-04
- agregar imagenes de fodo 
+# goit-markup-hw-02
+ tara2:aplicar fuentes y colores HTML
