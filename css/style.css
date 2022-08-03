@@ -63,18 +63,36 @@ header {
 
 }
 
+.enlaces .celular,
+.enlaces .email {
+    display: inline-flex;
+}
+
+.enlaces .celular::before{
+    content: " ";
+    width: 10px;
+    height: 16px;
+    background-size: contain;
+}
+
 .enlaces .email::before {
-    content: url('../imagenes/sobre.svg');
+    content: " ";
+    width: 16px;
+    height: 12px;
+    background-size: contain;
+}
+
+.enlaces .email::before {
+    background-image: url('../imagenes/sobre.svg');
     background-repeat: no-repeat;
     margin-right: 10px;
 }
 
 .enlaces .celular::before {
-    height: 16px;
-    content: url('../imagenes/celular.svg');
+    background-image: url('../imagenes/celular.svg');
     background-repeat: no-repeat;
     margin-right: 10px;
-    
+
 }
 
 .enlaces .numero,
