@@ -15,6 +15,7 @@
     --color-contacto: rgba(255, 255, 255, 0.6);
     --color-contacto-portafolio: rgba(255, 255, 255, 0.1);
     --color-seccion: #F5F4FA;
+    --color-redes: #AFB1B8;
 
 }
 
@@ -68,7 +69,7 @@ header {
     display: inline-flex;
 }
 
-.enlaces .celular::before{
+.enlaces .celular::before {
     content: " ";
     width: 10px;
     height: 16px;
@@ -84,15 +85,18 @@ header {
 
 .enlaces .email::before {
     background-image: url('../imagenes/sobre.svg');
+
+}
+
+.enlaces .email::before,
+.enlaces .celular::before {
     background-repeat: no-repeat;
+    background-position: center;
     margin-right: 10px;
 }
 
 .enlaces .celular::before {
     background-image: url('../imagenes/celular.svg');
-    background-repeat: no-repeat;
-    margin-right: 10px;
-
 }
 
 .enlaces .numero,
@@ -100,6 +104,7 @@ header {
     color: var(--color-negro);
     font-weight: 500;
     line-height: 16px;
+
 }
 
 
@@ -243,16 +248,22 @@ header {
 .parrafo-uno {
     color: var(--color-parrafo);
     line-height: 24px;
-    margin: 10px 30px 0 0;
+ 
 }
 
 
+.titulo-cliente,
 .titulo-seccion {
     font-size: 2.571em;
     text-align: center;
     line-height: 42px;
     font-weight: 700;
     margin-bottom: 50px;
+}
+.contenedor .clientes{
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .titulo-clientes {
@@ -310,9 +321,36 @@ header {
 }
 
 .caja-equipo .persona {
-    margin: 30px auto;
+    margin: 30px auto 16px;
     text-align: center;
+    
 }
+
+.equipo .equipo-redes {
+    width: 206px;
+    margin: auto;
+    font-size: 20px;
+    color: var(--color-redes);
+    text-align: center;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.equipo .equipo-redes .redes-sociales {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.equipo .equipo-redes .redes-sociales .icon{
+    margin: 12px auto;
+}
+.equipo .equipo-redes .redes-sociales:hover{
+    background: var(--color-azul);
+}
+
+
 
 .profesion {
     font-size: 1.142em;
@@ -336,8 +374,13 @@ header {
 
 .contenedor-dos .caja-dos {
     flex-direction: column;
+    margin-right: 30px;
+    width: 270px;
 }
 
+.contenedor-dos .caja-dos:last-child{
+    margin-right: 0;
+}
 /* .contenedor-dos .caja-dos::before {
     content: '';
     width: 270px;
@@ -367,6 +410,7 @@ header {
     display: inline-block;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 0.1px;
 
 }
 
