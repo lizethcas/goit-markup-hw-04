@@ -107,9 +107,6 @@ header {
 
 }
 
-
-
-
 .enlaces .menu {
     margin-right: 50px;
 }
@@ -230,12 +227,14 @@ header {
 .contacto,
 .parrafo-uno {
     letter-spacing: 0.03em;
-}
+}   
 
 .titulo-dos {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .parrafo-uno-dos {
@@ -248,7 +247,7 @@ header {
 .parrafo-uno {
     color: var(--color-parrafo);
     line-height: 24px;
- 
+
 }
 
 
@@ -260,7 +259,8 @@ header {
     font-weight: 700;
     margin-bottom: 50px;
 }
-.contenedor .clientes{
+
+.contenedor .clientes {
     display: flex;
     justify-content: space-between;
 
@@ -323,7 +323,7 @@ header {
 .caja-equipo .persona {
     margin: 30px auto 16px;
     text-align: center;
-    
+
 }
 
 .equipo .equipo-redes {
@@ -333,7 +333,7 @@ header {
     color: var(--color-redes);
     text-align: center;
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
 }
 
 .equipo .equipo-redes .redes-sociales {
@@ -343,14 +343,18 @@ header {
     cursor: pointer;
     margin-bottom: 30px;
 }
-.equipo .equipo-redes .redes-sociales .icon{
+
+.equipo .equipo-redes .redes-sociales .icon {
     margin: 12px auto;
 }
-.equipo .equipo-redes .redes-sociales:hover{
+
+.equipo .equipo-redes .redes-sociales:hover {
     background: var(--color-azul);
 }
 
-
+.equipo .equipo-redes .redes-sociales .redes {
+    color: var(--color-redes);
+}
 
 .profesion {
     font-size: 1.142em;
@@ -376,11 +380,13 @@ header {
     flex-direction: column;
     margin-right: 30px;
     width: 270px;
+    height: 252px;
 }
 
-.contenedor-dos .caja-dos:last-child{
+.contenedor-dos .caja-dos:last-child {
     margin-right: 0;
 }
+
 /* .contenedor-dos .caja-dos::before {
     content: '';
     width: 270px;
