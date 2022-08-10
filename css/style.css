@@ -186,10 +186,18 @@ header {
 }
 
 /* ********************************MAIN************************************ */
+.contenedor-clientes {
+    margin-top: 0px;
+}
+
+.contenedor:last-child{
+    margin-bottom: 151px;
+}
 
 .contenedor {
     margin: 95px auto;
     width: 1200px;
+    padding: 0.1px;
 }
 
 .contenedor-dos {
@@ -227,7 +235,7 @@ header {
 .contacto,
 .parrafo-uno {
     letter-spacing: 0.03em;
-}   
+}
 
 .titulo-dos {
     font-weight: 700;
@@ -260,16 +268,43 @@ header {
     margin-bottom: 50px;
 }
 
-.contenedor .clientes {
+.contenedor .iconos {
     display: flex;
     justify-content: space-between;
 
 }
 
+.contenedor .iconos .clientes {
+    
+    border: 1px #AFB1B8 solid;
+    border-radius: 4px;
+    width: 170px;
+    height: 81px;
+    cursor: pointer;
+
+}
+
+.contenedor .clientes:hover,
+.contenedor .clientes .svg-icon:hover {
+    border-color: var(--color-azul);
+    fill: var(--color-azul);
+
+}
+
+
+.contenedor .clientes .svg-icon {
+    fill: #AFB1B8;
+    object-fit: fill;
+    /* width: 106px;
+    height: 52.83px; */
+    
+}
+
 .titulo-clientes {
-    margin-top: 59px;
+
     margin-bottom: 44px;
 }
+
 
 .app-desk {
     background-image: url('../imagenes/imagen.jpg');
@@ -373,6 +408,7 @@ header {
 
 .contenedor-dos {
     display: flex;
+    justify-content: space-between;
 }
 
 
