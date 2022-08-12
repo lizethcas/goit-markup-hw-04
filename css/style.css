@@ -190,7 +190,7 @@ header {
     margin-top: 0px;
 }
 
-.contenedor:last-child{
+.contenedor:last-child {
     margin-bottom: 151px;
 }
 
@@ -289,15 +289,32 @@ header {
     border-color: var(--color-azul);
     fill: var(--color-azul);
 
+}   
+
+
+.svg:hover {
+    fill: var(--color-blanco);
+    background-color: var(--color-azul);
 }
 
+
+.svg {
+
+
+    margin: 12px auto;
+    height: 20px;
+    cursor: pointer;
+    fill: #AFB1B8;
+    object-fit: fill;
+    width: 20px;
+}
 
 .contenedor .clientes .svg-icon {
     fill: #AFB1B8;
     object-fit: fill;
     /* width: 106px;
     height: 52.83px; */
-    
+
 }
 
 .titulo-clientes {
@@ -376,7 +393,7 @@ header {
     height: 44px;
     border-radius: 50%;
     cursor: pointer;
-    margin-bottom: 30px;
+
 }
 
 .equipo .equipo-redes .redes-sociales .icon {
@@ -453,6 +470,7 @@ header {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 0.1px;
+    padding-bottom: 30px;
 
 }
 
@@ -630,6 +648,15 @@ footer {
     margin-right: 70px;
 }
 
+.redes .fa-brands {
+    color: var(--color-redes);
+    /* margin: 12px auto; */
+
+}
+
+.redes .fa-brands:hover {
+    color: var(--color-blanco);
+}
 
 .fa-brands {
     font-size: 33px;
